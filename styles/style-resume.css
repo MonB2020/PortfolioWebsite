@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+
+#navResume {
+    background-color: rgb(237, 246, 211);
+    padding: 1px 0 10px 10px;
+}
+
+#navResumeItems {
+    display: flex;
+    flex-direction: column;
+}
+
+#resume {
+    /* border-bottom: 2px solid blueviolet; */
+    border-bottom: 2px solid rgb(104, 45, 99);
+}
+
+
+/* Page navigation options */
+#navResumeItems > a:hover {
+    font-weight: bold;
+}
+
+#navResumeItems > a:visited {
+    color: rgb(93, 16, 193);
+}
+
+
+.heading, .title {
+    color: rgb(65, 66, 136);
+}
+
+.title {
+    margin-bottom: 5px;
+}
+
+.location {
+    margin: 0;
+}
+
+
+/* Tablet */
+@media only screen and (max-width: 950px) {
+    h2 {
+        font-size: 30px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    p, li, a, .location {
+        font-size: 20px;
+    }
+
+    .timeline {
+        font-size: 18px;
+    }
+}

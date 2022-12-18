@@ -1,0 +1,70 @@
+/* Images gallery div */
+.image-gallery {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide images by default */
+.image-slides {
+    display: none;
+}
+
+/* Previous and next arrows */
+#previous, #next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    font-size: 3vw;
+}
+
+#next {
+    right: 0;
+}
+
+
+/* Caption for image */
+.image-caption {
+    color: black;
+    background-color: rgb(237, 246, 211);
+    font-size: 12px;
+    position: relative;
+    bottom: 12px;
+    padding: 5px;
+}
+
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .1;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Tablet */
+@media only screen and (max-width: 950px) {
+    #previous, #next {
+        font-size: 40px;
+    }
+
+    .image-caption {
+        font-size: 21px;
+    }
+}
+
+/* Mobile phone */
+@media only screen and (max-width: 700px) {
+    #previous, #next {
+        font-size: 30px;
+    }
+}

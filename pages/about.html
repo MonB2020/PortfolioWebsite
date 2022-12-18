@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../images/favicon.ico" rel="icon" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" />
+    <link rel="stylesheet" href="../styles/style-about.css" />
+    <link rel="stylesheet" href="../styles/style-navbar.css" />
+</head>
+
+<body>
+    <div id="page">
+        <header id="header">
+            <div id="leftHeader">
+                <div id="logo">MB</div>
+            </div>
+
+            <nav id="navbar">
+                <a href="#" id="index" class="nav-items" onclick="indexPage()">Home</a>
+                <a href="#" id="about" class="nav-items" onclick="aboutPage()">About</a>
+                <a href="#" id="portfolio" class="nav-items" onclick="portfolioPage()">Portfolio</a>
+                <a href="#" id="resume" class="nav-items" onclick="resumePage()">Resume</a>
+                <a href="#" id="contact" class="nav-items" onclick="openPopup(contactPopupDiv)">Contact</a>
+                <a href="#" id="help" class="nav-items" onclick="openPopup(helpPopupDiv)">Help</a>
+            </nav>
+        </header>
+
+        <div id="dropdownMenuDiv">
+            <span id="menuBtn" class="material-icons-outlined" onclick="menuDropdownStatus()">menu</span>
+
+            <nav id="navbarMenu">
+                <a href="#" id="indexMenu" class="nav-menu-items" onclick="indexPage()">Home</a>
+                <a href="#" id="aboutMenu" class="nav-menu-items" onclick="aboutPage()">About</a>
+                <a href="#" id="portfolioMenu" class="nav-menu-items" onclick="portfolioPage()">Portfolio</a>
+                <a href="#" id="resumeMenu" class="nav-menu-items" onclick="resumePage()">Resume</a>
+                <a href="#" id="contactMenu" class="nav-menu-items" onclick="openPopup(contactPopupDiv)">Contact</a>
+                <a href="#" id="helpMenu" class="nav-menu-items" onclick="openPopup(helpPopupDiv)">Help</a>
+            </nav>
+        </div>
+
+        <div>
+            <h1>About Me</h1>
+        </div>
+
+        <div id="aboutMe">
+            <p>
+                My name is Monica. I enjoy learning about technology and using it in
+                my everyday life.
+            </p>
+
+            <p>
+                I am currently in my second year at BCIT in the Computer Systems
+                Technology program. In the first term, some of the courses included
+                web development, business analysis, business communications, and
+                programming in Java. I particularly enjoyed designing different
+                website layouts. Some courses in the second term included discrete
+                math, computer architecture, and relational database systems. I took
+                an interest in coding in my senior years of high school. This drove me
+                to pursue courses outside my regular curriculum, and even develop
+                personal projects. In my free time, I explore new programming concepts
+                online through Linkedin and Youtube.
+            </p>
+
+            <p>
+                On my spare time, I enjoy spending time with my friends and family,
+                baking, reading, spending time outdoors, taking photos, and going for
+                long walks.
+            </p>
+        </div>
+
+        <div id="personality">
+            <div id="traitsDiv">
+                <h3>I Am</h3>
+                <ul>
+                    <li>Self-motivated</li>
+                    <li>Hardworking</li>
+                    <li>Reliable</li>
+                    <li>Organized</li>
+                    <li>Responsible</li>
+                    <li>Detail-oriented</li>
+                    <li>A team player</li>
+                </ul>
+            </div>
+
+            <div id="languagesDiv">
+                <h3>Language Skills</h3>
+
+                <div id="languageStars">
+                    <div>
+                        <span class="language">Java</span>
+                        <div class="stars">
+                            <i class="material-icons">star</i>
+                            <i class="material-icons">star</i>
+                            <i class="material-icons">star</i>
+                            <i class="material-icons">star_border</i>
+                            <i class="material-icons">star_border</i>
+                        </div>
+                        <br />
+                    </div>
+    
+                    <div>
+                        <span class="language">HTML</span>
+                        <div class="stars">
+                            <i class="material-icons">star</i>
+                            <i class="material-icons">star</i>
+                            <i class="material-icons">star</i>
+                            <i class="material-icons">star_border</i>
+                            <i class="material-icons">star_border</i>
+                        </div>
+                        <br />
+                    </div>
+    
+                    <div>
+                        <span class="language">CSS</span>
+                        <div class="stars">
+                            <i class="material-icons">star</i>
+                            <i class="material-icons">star</i>
+                            <i class="material-icons">star_border</i>
+                            <i class="material-icons">star_border</i>
+                            <i class="material-icons">star_border</i>
+                        </div>
+                        <br />
+                    </div>
+    
+                    <div>
+                        <span class="language">JavaScript</span>
+                        <div class="stars">
+                            <i class="material-icons">star</i>
+                            <i class="material-icons">star</i>
+                            <i class="material-icons">star_border</i>
+                            <i class="material-icons">star_border</i>
+                            <i class="material-icons">star_border</i>
+                        </div>
+                        <br />
+                    </div>
+    
+                    <div>
+                        <span class="language">MySQL</span>
+                        <div class="stars">
+                            <i class="material-icons">star</i>
+                            <i class="material-icons">star</i>
+                            <i class="material-icons">star_border</i>
+                            <i class="material-icons">star_border</i>
+                            <i class="material-icons">star_border</i>
+                        </div>
+                        <br />
+                    </div>
+    
+                    <div>
+                        <span class="language">Express</span>
+                        <div class="stars">
+                            <i class="material-icons">star</i>
+                            <i class="material-icons">star_border</i>
+                            <i class="material-icons">star_border</i>
+                            <i class="material-icons">star_border</i>
+                            <i class="material-icons">star_border</i>
+                        </div>
+                        <br />
+                    </div>
+    
+                    <div>
+                        <span class="language">Node.js</span>
+                        <div class="stars">
+                            <i class="material-icons">star</i>
+                            <i class="material-icons">star_border</i>
+                            <i class="material-icons">star_border</i>
+                            <i class="material-icons">star_border</i>
+                            <i class="material-icons">star_border</i>
+                        </div>
+                        <br />
+                    </div>
+    
+                    <div>
+                        <span class="language">C</span>
+                        <div class="stars">
+                            <i class="material-icons">star</i>
+                            <i class="material-icons">star_border</i>
+                            <i class="material-icons">star_border</i>
+                            <i class="material-icons">star_border</i>
+                            <i class="material-icons">star_border</i>
+                        </div>
+                        <br />
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <footer id="footer">
+            <hr />
+            <p id="copyright">&copy; Website made by Monica B.</p>
+        </footer>
+    </div>
+
+    <!-- Contact info popup -->
+    <div id="contactPopupDiv" class="popup">
+        <div id="contactContent">
+            <i class="material-icons close" onclick="closePopup(contactPopupDiv)">close</i>
+            <h2>Contact Information</h2>
+            <hr />
+            <br><br>
+
+            <div id="contact-card">
+                <h1>Monica B</h1>
+
+                <div id="contactInfoDiv">
+                    <p id="careerPos">Student</p>
+                    <div id="locationDiv">
+                        <span class="material-icons">pin_drop</span>
+                        <span class="contactSpan">Vancouver, BC</span>
+                    </div>
+                    <div id="emailDiv">
+                        <span id="emailIcon" class="material-icons">email</span>
+                        <span class="contactSpan">monicab3002@outlook.com</span>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+        </div>
+    </div>
+
+    <!-- Help info popup -->
+    <div id="helpPopupDiv" class="popup">
+        <div id="helpContent">
+            <i class="material-icons close" onclick="closePopup(helpPopupDiv)">close</i>
+            <h2>Help</h2>
+            <hr />
+            <p>Welcome to Monica's Portfolio website!</p>
+            <p>Click on one of the navigation bar sections at the top of the page to view
+                more details.</p>
+            <br />
+            <div id="okBtnDiv">
+                <button id="okBtn" onclick="closePopup(helpPopupDiv)">OK</button>
+            </div>
+            <br><br>
+        </div>
+    </div>
+
+    <script src="../scripts/navbar.js"></script>
+</body>
+
+</html>

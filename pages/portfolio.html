@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Monica's Portfolio</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../images/favicon.ico" rel="icon" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="../styles/style-portfolio.css" />
+    <link rel="stylesheet" href="../styles/style-portfolio-imgs.css" />
+    <link rel="stylesheet" href="../styles/style-navbar.css" />
+
+    <script src="../scripts/portfolioImgDisplay.js" defer></script>
+</head>
+
+<body>
+
+    <div id="page">
+
+        <header id="header">
+            <div id="leftHeader">
+                <div id="logo">MB</div>
+            </div>
+
+            <nav id="navbar">
+                <a href="#" id="index" class="nav-items" onclick="indexPage()">Home</a>
+                <a href="#" id="about" class="nav-items" onclick="aboutPage()">About</a>
+                <a href="#" id="portfolio" class="nav-items" onclick="portfolioPage()">Portfolio</a>
+                <a href="#" id="resume" class="nav-items" onclick="resumePage()">Resume</a>
+                <a href="#" id="contact" class="nav-items" onclick="openPopup(contactPopupDiv)">Contact</a>
+                <a href="#" id="help" class="nav-items" onclick="openPopup(helpPopupDiv)">Help</a>
+            </nav>
+        </header>
+
+        <div id="dropdownMenuDiv">
+            <span id="menuBtn" class="material-icons-outlined" onclick="menuDropdownStatus()">menu</span>
+
+            <nav id="navbarMenu">
+                <a href="#" id="indexMenu" class="nav-menu-items" onclick="indexPage()">Home</a>
+                <a href="#" id="aboutMenu" class="nav-menu-items" onclick="aboutPage()">About</a>
+                <a href="#" id="portfolioMenu" class="nav-menu-items" onclick="portfolioPage()">Portfolio</a>
+                <a href="#" id="resumeMenu" class="nav-menu-items" onclick="resumePage()">Resume</a>
+                <a href="#" id="contactMenu" class="nav-menu-items" onclick="openPopup(contactPopupDiv)">Contact</a>
+                <a href="#" id="helpMenu" class="nav-menu-items" onclick="openPopup(helpPopupDiv)">Help</a>
+            </nav>
+        </div>
+
+
+        <br>
+        
+
+        <nav id="navProjects">
+            <a id="top"></a>
+            <h2>Personal Projects</h2>
+            <p>GitHub: <a target="_blank" href="https://github.com/MonB2020" class="github-username">@MonB2020</a></p>
+            
+            <ol>
+                <li> <a href="#cookiePurchases">Cookie Purchase System</a> </li>
+                <li> <a href="#blogPosts">Blog Posting Template</a> </li>
+                <li> <a href="#healthPlanner">Health Planner App</a> </li>
+                <li> <a href="#employeeTracker">Employee Tracker</a> </li>
+            </ol>
+            <br>
+
+            <h2>BCIT Projects</h2>
+            <p>GitHub: <a target="_blank" href="https://github.com/MonB003" class="github-username">@MonB003</a></p>
+
+
+            <ol>
+                <li> <a href="#onTheHouse">On The House</a> </li>
+                <li> <a href="#noteApp">Note Taking App</a> </li>
+            </ol>
+            <br>
+
+            <a href="#bottom">Bottom of the Page</a>
+        </nav>
+
+
+
+        <br><br><br>
+
+
+
+        <!-- Slideshow of images from projects -->
+        <h2 class="projectTitle">Image Gallery</h2>
+        <div class="image-gallery">
+
+            <div class="image-slides fade">
+                <img src="../images/CapstoneMain.png" style="width: 100%" />
+                <p class="image-caption">Health Planner - Main Page</p>
+            </div>
+
+            <div class="image-slides fade">
+                <img src="../images/CapstoneFunctions1.png" style="width: 100%" />
+                <p class="image-caption">Health Planner - Functions</p>
+            </div>
+
+            <div class="image-slides fade">
+                <img src="../images/CapstoneFunctions2.png" style="width: 100%" />
+                <p class="image-caption">Health Planner - Functions</p>
+            </div>
+
+            <div class="image-slides fade">
+                <img src="../images/BlogPosts.png" style="width: 100%" />
+                <p class="image-caption">Blog Post Template</p>
+            </div>
+
+            <div class="image-slides fade">
+                <img src="../images/CookieSystem-Login.png" style="width: 100%" />
+                <p class="image-caption">Cookie Purchase System - Login</p>
+            </div>
+
+            <div class="image-slides fade">
+                <img src="../images/CookieSystem-Signup.png" style="width: 100%" />
+                <p class="image-caption">Cookie Purchase System - Signup</p>
+            </div>
+
+            <div class="image-slides fade">
+                <img src="../images/CookieSystem-Main.png" style="width: 100%" />
+                <p class="image-caption">Cookie Purchase System - Main</p>
+            </div>
+
+            <div class="image-slides fade">
+                <img src="../images/CookieSystem-Order.png" style="width: 100%" />
+                <p class="image-caption">Cookie Purchase System - Order</p>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <span id="previous" class="material-symbols-outlined" onclick="changeImage(-1)">arrow_circle_left</span>
+            <span id="next" class="material-symbols-outlined" onclick="changeImage(1)">arrow_circle_right</span>
+        </div>
+
+
+
+        <br><br><br>
+
+
+        <div id="allProjectsDiv">
+
+            <section id="cookiePurchases">
+                <h2 class="projectTitle">Cookie Purchase System</h2>
+                <small class="timeline">Dec 2021 - Jan 2022, June 2022</small>
+                <br><br>
+    
+                <!-- App explanation -->
+                <details>
+                    <summary class="projectDetails">App Details</summary>
+                    <p>The Cookie Purchase System is an application where a user can purchase cookies and fill out a payment
+                        form. Users can also write a review about their experience with the purchase.</p>
+                    <br>
+                    <p class="features-title">Features</p>
+                    <ul>
+                        <li>Sign up and login</li>
+                        <li>Order cookies</li>
+                        <li>Make a payment</li>
+                        <li>Write a review</li>
+                    </ul>
+                </details>
+    
+                <ul>
+                    <li>Languages/Software: HTML, CSS, JavaScript, Node.js, Express, MySQL</li>
+                    <li>IDE used: Visual Studio Code</li>
+                </ul>
+                <a target="_blank" href="https://github.com/MonB2020/Cookie-Purchase-System" class="app-link">GitHub Code</a>
+            </section>
+    
+    
+            <section id="blogPosts">
+                <h2 class="projectTitle">Blog Posting Template</h2>
+                <small class="timeline">Dec 2021</small>
+                <br><br>
+    
+                <!-- App explanation -->
+                <details>
+                    <summary class="projectDetails">App Details</summary>
+                    <p>The Blog Posting Template is a simple application where users can create a blog post by filling in
+                        text fields for the title, message, and author. When the button to create a post is clicked, and the
+                        user clears the text fields, the new post will appear.</p>
+                    <br>
+                    <p class="features-title">Features</p>
+                    <ul>
+                        <li>Create a blog post and post it</li>
+                        <li>View all your posts</li>
+                    </ul>
+                </details>
+    
+                <ul>
+                    <li>Languages/Software: React, HTML, CSS, JavaScript</li>
+                    <li>IDE used: Visual Studio Code</li>
+                </ul>
+                <a target="_blank" href="https://github.com/MonB2020/Blog-Posting-Template" class="app-link">GitHub Code</a>
+            </section>
+    
+    
+            <section id="healthPlanner">
+                <h2 class="projectTitle">Health Planner App</h2>
+                <small class="timeline">May 2021 - June 2021</small>
+                <br><br>
+    
+                <!-- App explanation -->
+                <details>
+                    <summary class="projectDetails">App Details</summary>
+                    <p>The Health Planner App is a simple application meant to help people easily keep track of their
+                        health.</p>
+                    <p>The user fills out their information for the following health categories: Calories, Exercise, and
+                        Sleep. They also fill out their next goal for these. Additional app features include a built in BMR
+                        calculator, a food log, and a shopping list.</p>
+                    <br>
+                    <p class="features-title">Features</p>
+                    <ul>
+                        <dl>
+                            <dt>
+                                <li>Health Plan Log:</li>
+                            </dt>
+                            <dd>
+                                <li>Fill out a health plan to log calories, exercise hours, and sleep hours</li>
+                            </dd>
+                            <dd>
+                                <li>Save health plan log to a text file</li>
+                            </dd>
+                            <dt>
+                                <li>Food Log:</li>
+                            </dt>
+                            <dd>
+                                <li>Log foods eaten for each meal in a specified day</li>
+                            </dd>
+                            <dd>
+                                <li>Save foods logged to a text file</li>
+                            </dd>
+                            <dt>
+                                <li>Shopping List:</li>
+                            </dt>
+                            <dd>
+                                <li>Add items and their prices to a shopping list</li>
+                            </dd>
+                            <dd>
+                                <li>View all items currently in the shopping list</li>
+                            </dd>
+                            <dd>
+                                <li>Delete an item from the shopping list</li>
+                            </dd>
+                        </dl>
+                        <li>Information on exercise tips, types of activities based on intensity level, calories and sleep
+                            recommendations</li>
+                        <li>Calculate BMR</li>
+                    </ul>
+                </details>
+    
+                <ul>
+                    <li>Languages/Software: Java, JavaFX</li>
+                    <li>IDE used: IntelliJ</li>
+                    <li>UI designed with SceneBuilder</li>
+                </ul>
+                <a target="_blank" href="https://github.com/MonB2020/Health-Planner-App" class="app-link">GitHub Code</a>
+            </section>
+    
+    
+            <section id="employeeTracker">
+                <h2 class="projectTitle">Employee Tracker</h2>
+                <small class="timeline">Feb 2021</small>
+                <br><br>
+    
+                <!-- App explanation -->
+                <details>
+                    <summary class="projectDetails">App Details</summary>
+                    <p>The Employee Tracker is a simple program that allows users to add, view, save, and delete employees.
+                    </p>
+                    <br>
+                    <p class="features-title">Features</p>
+                    <ul>
+                        <li>Add an employee</li>
+                        <li>View all employees</li>
+                        <li>View a selected employee's information</li>
+                        <li>Save an employee's information to a text file</li>
+                        <li>Delete an employee</li>
+                    </ul>
+                </details>
+    
+                <ul>
+                    <li>Languages/Software: Java, JavaFX</li>
+                    <li>IDE used: IntelliJ</li>
+                    <li>UI designed with SceneBuilder</li>
+                </ul>
+                <a target="_blank" href="https://github.com/MonB2020/Employee-Tracker" class="app-link">GitHub Code</a>
+            </section>
+    
+    
+            <section id="onTheHouse">
+                <h2 class="projectTitle">On The House</h2>
+                <small class="timeline">May 2022</small>
+                <br><br>
+    
+                <!-- App explanation -->
+                <details>
+                    <summary class="projectDetails">App Details</summary>
+                    <p>On The House is an app that connects those in need of items to those who can give away items, to help
+                        reduce our carbon footprint one transaction at a time by reducing waste through reusing used items.
+                    </p>
+                    <br>
+
+                    <p class="features-title">Features</p>
+                    <ul>
+                        <li>View all users posts</li>
+                        <li>View details of a post</li>
+                        <li>View all your posts under the MyListings page</li>
+                        <li>Create a post with a title, city, description, and photo</li>
+                        <li>Edit a post's information (title, city, description, status)</li>
+                        <li>Reserve a post item for a specific user</li>
+                        <li>Delete a post</li>
+                        <li>Message another post owner</li>
+                        <li>View your profile information</li>
+                        <li>Edit your profile information</li>
+                        <li>View another user's profile</li>
+                        <li>Rate another user</li>
+                    </ul>
+                    <br>
+
+                    <p class="features-title">Features I Contributed To</p>
+                    <ul>
+                        <li>Signup feature</li>
+                        <li>Security checks for login, signup, creating and editing a post</li>
+                        <li>Reserve a post item for a specific user</li>
+                        <li>Popup confirmation messages for deleting a post and updating profile information</li>
+                        <li>Private messaging using socket.io</li>
+                        <li>Editing profile information</li>
+                        <li>User dashboard with features to add, edit, and delete a user (for admin users only)</li>
+                    </ul>
+                </details>
+    
+                <ul>
+                    <li>Languages/Software: HTML, CSS, JavaScript, Node.js, Express, MySQL</li>
+                    <li>IDE used: Visual Studio Code</li>
+                    <li>Hosting: Heroku</li>
+                    <li>Created in a group of 4</li>
+                </ul>
+                <a target="_blank" href="https://on-the-house-bby-22.herokuapp.com/" class="app-link">Hosted App</a>
+                <a target="_blank" href="https://github.com/MonB003/2800-202210-BBY22" class="app-link">GitHub Code</a>
+            </section>
+    
+    
+            <section id="noteApp">
+                <h2 class="projectTitle">Note Taking App</h2>
+                <small class="timeline">Oct 2021 - Dec 2021</small>
+                <br><br>
+    
+                <!-- App explanation -->
+                <details>
+                    <summary class="projectDetails">App Details</summary>
+                    <p>The Note Taking App is an app that helps people take notes with simplicity and appeal.</p>
+                    <br>
+
+                    <p class="features-title">Features</p>
+                    <ul>
+                        <li>Login</li>
+                        <li>View all your notes on the main page</li>
+                        <li>Add a note</li>
+                        <li>Set a reminder</li>
+                        <li>Edit a note</li>
+                        <li>Delete a note</li>
+                    </ul>
+                    <br>
+
+                    <p class="features-title">Features I Contributed To</p>
+                    <ul>
+                        <li>Login feature with firebase</li>
+                        <li>Style for home and login pages</li>
+                        <li>Help page with instructions for using the features</li>
+                        <li>Connected pages together with a navbar and buttons</li>
+                    </ul>
+                </details>
+    
+                <ul>
+                    <li>Languages/Software: HTML, CSS, JavaScript, Bootstrap, Firebase</li>
+                    <li>IDE used: Visual Studio Code</li>
+                    <li>Created in a group of 3</li>
+                </ul>
+                <a target="_blank" href="https://bby27-noteapp.firebaseapp.com/" class="app-link">Hosted App</a>
+                <a target="_blank" href="https://github.com/mksample/1800_BBY27" class="app-link">GitHub Code</a>
+            </section>
+
+        </div>
+        
+
+        <br><br><br>
+
+
+        <nav>
+            <a id="bottom"></a>
+            <a href="#top">Top of the Page</a>
+        </nav>
+
+
+
+        <footer id="footer">
+            <hr />
+            <p id="copyright"> &copy; Website made by Monica B.</p>
+        </footer>
+
+    </div>
+
+
+
+    <!-- Contact info popup -->
+    <div id="contactPopupDiv" class="popup">
+        <div id="contactContent">
+            <i class="material-icons close" onclick="closePopup(contactPopupDiv)">close</i>
+            <h2>Contact Information</h2>
+            <hr />
+            <br><br>
+
+            <div id="contact-card">
+                <h1>Monica B</h1>
+                
+                <div id="contactInfoDiv">
+                    <p id="careerPos">Student</p>
+                    <div id="locationDiv">
+                        <span class="material-icons">pin_drop</span>
+                        <span class="contactSpan">Vancouver, BC</span>
+                    </div>
+                    <div id="emailDiv">
+                        <span id="emailIcon" class="material-icons">email</span>
+                        <span class="contactSpan">monicab3002@outlook.com</span>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+        </div>
+    </div>
+
+
+    <!-- Help info popup -->
+    <div id="helpPopupDiv" class="popup">
+        <div id="helpContent">
+            <i class="material-icons close" onclick="closePopup(helpPopupDiv)">close</i>
+            <h2>Help</h2>
+            <hr />
+            <p>Welcome to Monica's Portfolio website!</p>
+            <p>Click on one of the navigation bar sections at the top of the page to view more details.</p>
+            <br>
+            <div id="okBtnDiv">
+                <button id="okBtn" onclick="closePopup(helpPopupDiv)">OK</button>
+            </div>
+            <br><br>
+        </div>
+    </div>
+
+
+
+    <script src="../scripts/navbar.js"></script>
+
+</body>
+
+</html>

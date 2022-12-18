@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+
+#about {
+    /* border-bottom: 2px solid blueviolet; */
+    border-bottom: 2px solid rgb(104, 45, 99);
+}
+
+#personality {
+    background-color: rgb(237, 246, 211);
+
+    display: flex;
+    flex-direction: row;
+    column-gap: 30%;
+    justify-content: center;
+}
+
+#languagesDiv {
+    width: 30%;
+}
+
+#languageStars {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    column-gap: 4%;
+}
+
+h3 {
+    color: rgb(65, 66, 136);
+}
+
+
+.language {
+    font-size: 20px;
+}
+
+.material-icons {
+    font-size: 18px;
+}
+
+
+p, li {
+    font-size: 18px;
+}
+
+
+
+/* Tablet */
+@media only screen and (max-width: 950px) {
+    #personality {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #traitsDiv, #languagesDiv {
+        width: 50%;
+    }
+
+    #traitsDiv {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    p, li, .language {
+        font-size: 20px;
+    }
+}
+
+
+/* Mobile phone */
+@media only screen and (max-width: 500px) {
+    #traitsDiv, #languageStars {
+        display: grid;
+        grid-template-columns: 98%;
+    }
+}

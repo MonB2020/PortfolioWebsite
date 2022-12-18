@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+
+#portfolio {
+    /* border-bottom: 2px solid blueviolet; */
+    border-bottom: 2px solid rgb(104, 45, 99);
+}
+
+
+#navProjects {
+    background-color: rgb(237, 246, 211);
+    padding: 1px 0 10px 10px;
+}
+
+#allProjectsDiv {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8vh;
+}
+
+
+/* Project title colour */
+.projectTitle {
+    color: rgb(65, 66, 136);
+}
+
+/* When details element is expanded */
+details[open] {
+    border: 2px solid black;
+}
+
+summary {
+    cursor: pointer;
+}
+
+.features-title {
+    color: rgb(65, 66, 136);
+    font-weight: bold;
+}
+
+/* Page navigation options */
+li > a:hover, .github-username:hover {
+    font-weight: bold;
+}
+
+li > a:visited, .github-username:visited {
+    color: rgb(93, 16, 193);
+}
+
+.github-username {
+    text-decoration: none;
+}
+
+
+.app-link {
+    text-decoration: none;
+    background-color: rgb(50, 163, 120);
+    color: white;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.app-link:hover {
+    box-shadow: 1px 1px 3px 3px rgba(91, 165, 137, 0.3);
+}
+
+.app-link:visited {
+    color: white;
+}
+
+
+
+/* Tablet */
+@media only screen and (max-width: 950px) {
+    h2 {
+        font-size: 30px;
+    }
+
+    p, li, a, .projectDetails {
+        font-size: 20px;
+    }
+
+    .features-title {
+        font-size: 24px;
+    }
+
+    .timeline {
+        font-size: 18px;
+    }
+}

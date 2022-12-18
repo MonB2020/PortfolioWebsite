@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Monica's Resume</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../images/favicon.ico" rel="icon" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" />
+    <link rel="stylesheet" href="../styles/style-navbar.css" />
+    <link rel="stylesheet" href="../styles/style-resume.css" />
+</head>
+
+<body>
+
+    <div id="page">
+
+        <header id="header">
+            <div id="leftHeader">
+                <div id="logo">MB</div>
+            </div>
+
+            <nav id="navbar">
+                <a href="#" id="index" class="nav-items" onclick="indexPage()">Home</a>
+                <a href="#" id="about" class="nav-items" onclick="aboutPage()">About</a>
+                <a href="#" id="portfolio" class="nav-items" onclick="portfolioPage()">Portfolio</a>
+                <a href="#" id="resume" class="nav-items" onclick="resumePage()">Resume</a>
+                <a href="#" id="contact" class="nav-items" onclick="openPopup(contactPopupDiv)">Contact</a>
+                <a href="#" id="help" class="nav-items" onclick="openPopup(helpPopupDiv)">Help</a>
+            </nav>
+        </header>
+
+        <div id="dropdownMenuDiv">
+            <span id="menuBtn" class="material-icons-outlined" onclick="menuDropdownStatus()">menu</span>
+
+            <nav id="navbarMenu">
+                <a href="#" id="indexMenu" class="nav-menu-items" onclick="indexPage()">Home</a>
+                <a href="#" id="aboutMenu" class="nav-menu-items" onclick="aboutPage()">About</a>
+                <a href="#" id="portfolioMenu" class="nav-menu-items" onclick="portfolioPage()">Portfolio</a>
+                <a href="#" id="resumeMenu" class="nav-menu-items" onclick="resumePage()">Resume</a>
+                <a href="#" id="contactMenu" class="nav-menu-items" onclick="openPopup(contactPopupDiv)">Contact</a>
+                <a href="#" id="helpMenu" class="nav-menu-items" onclick="openPopup(helpPopupDiv)">Help</a>
+            </nav>
+        </div>
+
+        <br>
+
+
+        <div id="resumeContent">
+
+            <nav id="navResume">
+                <a id="top"></a>
+                <h2>Navigate To:</h2>
+                <div id="navResumeItems">
+                    <a href="#summary">Summary</a>
+                    <a href="#technicalSkills">Technical Skills</a>
+                    <a href="#education">Education</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#bottom">Bottom of the Page</a>
+                </div>
+            </nav>
+    
+
+            <br>
+            
+
+            <section id="summary">
+                <h2 class="heading">Summary</h2>
+                <ul>
+                    <li>Strong problem-solving and communication skills</li>
+                    <li>Hardworking and highly organized; complete tasks thoroughly</li>
+                    <li>Work well with others and have an excellent work ethic</li>
+                    <li>Awarded the 2021 District Authority Scholarship in Computer Programming</li>
+                </ul>
+            </section>
+
+
+            <br>
+
+
+            <section id="technicalSkills">
+                <h2 class="heading">Technical Skills</h2>
+                <ul>
+                    <li>Experience with Java, HTML, CSS, JavaScript, DOM, JSON, Bootstrap, GitHub</li>
+                    <li>Basic understanding of Node.js and Express</li>
+                    <li>Working knowledge of C, C++, MySQL and Firebase</li>
+                    <li>Developing skills on Microsoft applications (Word, PowerPoint)</li>
+                </ul>
+            </section>
+
+
+            <br>
+
+
+            <section id="education">
+                <h2 class="heading">Education</h2>
+
+                <div>
+                    <h3 class="title">Computer Systems Technology Diploma</h3>
+                    <p class="location">British Columbia Institute of Technology</p>
+                    <small class="timeline">Graduating May 2023</small>
+                    <ul>
+                        <li>Key courses during first year include: Object Oriented Programming, Procedural Programming, Business Communications, and Web Development</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="title">High School Diploma</h3>
+                    <p class="location">Notre Dame Regional Secondary School</p>
+                    <small class="timeline">Sep 2016 - Jun 2021</small>
+                    <ul>
+                        <li>Key grade 12 courses include Physics and Calculus</li>
+                        <li>Key grade 11 courses include Computer Programming and Digital Communications</li>
+                        <li>Involved in cross country and dance squad</li>
+                    </ul>
+                </div>
+    
+            </section>
+
+    
+            <br>
+    
+
+            <section id="experience">
+                <h2 class="heading">Work and Volunteer Experience</h2>
+
+                <div>
+                    <h3 class="title">Web Strategist (Part time/Casual)</h3>
+                    <p class="location"><abbr title="Royal Canadian Mounted Police">RCMP</abbr></p>
+                    <small class="timeline">July 2022 - Present</small>
+                    <ul>
+                        <li>Updating data on websites based on client needs and monitoring the shared email inbox</li>
+                        <li>Converting manuals and web pages to newer HTML templates</li>
+                        <li>Performing web accessibility checks on the RCMP website to ensure news releases follow the correct reader accessibility standards</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="title">Concession Supervisor (Seasonal)</h3>
+                    <p class="location">Playland</p>
+                    <small class="timeline">Sep 2021, Aug - Sep 2022</small>
+                    <ul>
+                        <li>Assisted employees in multiple positions such as attendant and grill which resulted in tasks getting completed faster with active teamwork</li>
+                        <li>Filled out paperwork and stock sheets at the end of the shift which resulted in an accurate inventory count for the next day</li>
+                        <li>Trained new employees with processes to take orders and prepare food, which gave them knowledge of processes and skill development</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="title">Cashier (Volunteer)</h3>
+                    <p class="location"><abbr title="Vancouver General Hospital">VGH</abbr> Thrift Store</p>
+                    <small class="timeline">Aug 2020 - Aug 2022</small>
+                    <ul>
+                        <li>Attentively processed transactions and maintained security over the cash register which resulted in better customer interactions and reduction of cash theft risk</li>
+                        <li>Priced and organized donated items which resulted in an organized store for customers and adequate sale prices for the charity</li>
+                        <li>Volunteered additional hours during school breaks which had a positive effect on other team members, including increased flexibility in working roles</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="title">Concession Grill (Seasonal)</h3>
+                    <p class="location">Playland</p>
+                    <small class="timeline">July 2021 - Sep 2021, Mar 2022, June 2022 - July 2022</small>
+                    <ul>
+                        <li>Prepared and served food using grill and fryers</li>
+                        <li>Trained new employees on the grill and fryers</li>
+                        <li>Answered questions about the menu</li>
+                        <li>Set up and cleaned up food stands thoroughly which resulted in a clean workplace and adhered to food safety protocols</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="title">Concession Attendant (Seasonal)</h3>
+                    <p class="location">Playland</p>
+                    <small class="timeline">Summers 2018 - 2021</small>
+                    <ul>
+                        <li>Sold fast food items and drinks using a POS cash register which resulted in accurate sales and tasks getting completed efficiently</li>
+                        <li>Set up and cleaned up food stands thoroughly</li>
+                        <li>Assisted guests and guided people with directions which contributed to the organization's goals of providing a friendly and memorable experience</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="title">Summer Camp Volunteer</h3>
+                    <p class="location">Hastings Community Centre</p>
+                    <small class="timeline">July - Aug 2017, July 2018, July 2021</small>
+                    <ul>
+                        <li>Organized and ran activities with camp leaders which resulted in a better camp experience for children</li>
+                        <li>Supervised children while on trips which resulted in a safe and enjoyable environment for the children</li>
+                        <li>Assisted children with disabilities participate in activities which created an inclusive environment for those children</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="title">Administrative Assistant (Casual, On Call)</h3>
+                    <p class="location">Transpacific Realty Advisors</p>
+                    <small class="timeline">Dec 2017 - Mar 2020</small>
+                    <ul>
+                        <li>Sorted mail, filed invoices, and set up electronic client folders which facilitated paperless recordkeeping structure for the company</li>
+                        <li>Scanned and photocopied documents for electronic recordkeeping and storage which reduced physical storage space in the office and offsite</li>
+                        <li>Archived records under an organized network filing format which assisted in electronic access by staff</li>
+                    </ul>
+                </div>
+
+            </section>
+
+    
+            <br>
+
+
+            <nav>
+                <a id="bottom"></a>
+                <a href="#top">Top of the Page</a>
+            </nav>
+
+        </div>
+
+
+        <footer id="footer">
+            <hr />
+            <p id="copyright"> &copy; Website made by Monica B.</p>
+        </footer>
+
+    </div>
+
+
+
+    <!-- Contact info popup -->
+    <div id="contactPopupDiv" class="popup">
+        <div id="contactContent">
+            <i class="material-icons close" onclick="closePopup(contactPopupDiv)">close</i>
+            <h2>Contact Information</h2>
+            <hr />
+            <br><br>
+
+            <div id="contact-card">
+                <h1>Monica B</h1>
+
+                <div id="contactInfoDiv">
+                    <p id="careerPos">Student</p>
+                    <div id="locationDiv">
+                        <span class="material-icons">pin_drop</span>
+                        <span class="contactSpan">Vancouver, BC</span>
+                    </div>
+                    <div id="emailDiv">
+                        <span id="emailIcon" class="material-icons">email</span>
+                        <span class="contactSpan">monicab3002@outlook.com</span>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+        </div>
+    </div>
+
+
+    <!-- Help info popup -->
+    <div id="helpPopupDiv" class="popup">
+        <div id="helpContent">
+            <i class="material-icons close" onclick="closePopup(helpPopupDiv)">close</i>
+            <h2>Help</h2>
+            <hr />
+            <p>Welcome to Monica's Portfolio website!</p>
+            <p>Click on one of the navigation bar sections at the top of the page to view more details.</p>
+            <br>
+            <div id="okBtnDiv">
+                <button id="okBtn" onclick="closePopup(helpPopupDiv)">OK</button>
+            </div>
+            <br><br>
+        </div>
+    </div>
+
+
+
+    <script src="../scripts/navbar.js"></script>
+
+</body>
+
+</html>

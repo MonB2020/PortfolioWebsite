@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+
+.material-icons.md-20 {
+    font-size: 20px;
+}
+
+
+#errorContent {
+    background: linear-gradient(75deg, rgb(254, 162, 162), rgb(240, 207, 253));
+    height: 83vh;
+    overflow: hidden;
+}
+
+
+#btnDiv {
+    /* Center button */
+    display: flex;
+    justify-content: center;
+    padding: 20%;
+}
+
+#redirectBtn {
+    background-color: darkolivegreen;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-size: 2vw;
+    padding: 5px 15px;
+    cursor: pointer;
+
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+
+/* Keyframe to spin button in full circle */
+@keyframes spin {
+    0% {
+        transform: rotateZ(0);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+
+
+/* Tablet */
+@media only screen and (max-width: 950px) {
+    #redirectBtn {
+        font-size: 20px;
+    }
+
+    #copyright {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+
+#index {
+    /* border-bottom: 2px solid blueviolet; */
+    border-bottom: 2px solid rgb(104, 45, 99);
+}
+
+
+/* Profile */
+#indexHeader {
+    grid-row: 2 / span 1;
+    background-color: rgb(237, 246, 211);
+
+    display: grid;
+    grid-template-columns: 39% 60%;
+    height: 80vh;
+    min-height: 700px;
+}
+
+#indexPhoto {
+    grid-column: 1 / span 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#photo {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+#personalStatement {
+    grid-column: 2 / span 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#firstName {
+    font-size: 3.5vw;
+    font-weight: lighter;
+}
+
+.statement, #copyright {
+    font-size: 1.75vw;
+    word-wrap: break-word;
+}
+
+#skillsDiv {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10vw;
+    justify-content: center;
+}
+
+/* Footer */
+#footer {
+    grid-row: 4 / span 1;
+}
+
+
+/* Tablet */
+@media only screen and (max-width: 950px) {
+    #page {
+        grid-template-rows: none;
+    }
+
+    #header {
+        display: grid;
+        grid-template-columns: 99%;
+        grid-template-rows: 39% 59%;
+        column-gap: 0;
+        row-gap: 2%;
+        height: 100px;
+    }
+
+    #leftHeader {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
+
+    #navbar {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+    }
+
+
+    #indexHeader {
+        display: grid;
+        grid-template-columns: 99%;
+        column-gap: 0;
+        row-gap: 1%;
+    }
+
+    #indexPhoto {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
+
+    #photo {
+        width: 200px;
+        height: auto;
+    }
+
+    #personalStatement {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+    }
+
+    #firstName {
+        font-size: 30px;
+    }
+
+    #careerPos, .statement {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    p, #copyright {
+        font-size: 20px;
+        text-align: left;
+    }
+}
