@@ -1,26 +1,5 @@
 // *Full screen navbar*
 
-// Redirect to index page
-function indexPage() {
-    window.location.replace("/");
-};
-
-// Redirect to about page
-function aboutPage() {
-    window.location.replace("/about");
-};
-
-// Redirect to portfolio page
-function portfolioPage() {
-    window.location.replace("/portfolio");
-};
-
-// Redirect to resume page
-function resumePage() {
-    window.location.replace("/resume");
-};
-
-
 // Open popup window element passed as the function parameter (when either contact or help button is clicked)
 function openPopup(popupDiv) {
     popupDiv.style.display = "block";
