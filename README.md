@@ -16,7 +16,7 @@
 ## Technologies
 * Frontend: HTML, CSS, JavaScript
 * Backend: Node.js, Express
-* Hosting: Heroku
+* Hosting: Firebase
 
 <br>
 
@@ -43,11 +43,8 @@ npm install jsdom
 ```
 
 ### Running the project:
-1. Open Command Prompt
-2. `cd` into your project folder
-3. Type `node serverSide`
-4. Go to http://localhost:3000 on any browser
-5. This will direct you to the home page
+1. Open Live Server in Visual Studio Code
+2. This will direct you to the home page in a browser
 
 <br>
 
