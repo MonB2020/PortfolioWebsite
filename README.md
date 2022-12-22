@@ -1,7 +1,7 @@
 # Portfolio
 > This is my personal portfolio website that includes all my coding projects and resume experience.
 
-[Hosted App Link](https://portfoliowebsite-54986.web.app/)
+[Hosted App Link](https://monicab-portfolio.web.app/)
 
 <br>
 
@@ -33,7 +33,7 @@ You will need to install:
 Cloning the repository:
 - Open Command Prompt 
 - `cd` into the folder you want the repository stored in
-- Type: `git clone https://github.com/MonB2020/Portfolio.git`
+- Type: `git clone https://github.com/MonB2020/PortfolioWebsite.git`
 
 In your folder, you will need to install these node packages:
 ```
